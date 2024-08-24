@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.centered-text h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;s
+    animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff8c8c, 0 0 30px #ff8c8c, 0 0 40px #ff8c8c, 0 0 50px #ff8c8c, 0 0 60px #ff8c8c, 0 0 70px #ff8c8c;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff8c8c, 0 0 40px #ff8c8c, 0 0 50px #ff8c8c, 0 0 60px #ff8c8c, 0 0 70px #ff8c8c, 0 0 80px #ff8c8c;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff8c8c, 0 0 30px #ff8c8c, 0 0 40px #ff8c8c, 0 0 50px #ff8c8c, 0 0 60px #ff8c8c, 0 0 70px #ff8c8c;
+    }
+}
